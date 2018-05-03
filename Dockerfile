@@ -59,5 +59,7 @@ COPY ./docker-entrypoint.sh .
 COPY ./res ./res
 COPY ./config ./config
 
+EXPOSE 8300 8400 8500
+
 # call the wrapper to launch consul and config-seed application
 CMD ["sh", "launch-consul-config.sh"]
